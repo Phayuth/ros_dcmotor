@@ -60,11 +60,11 @@ class motor_control(object):
 			# Limit voltage
 			if self.input > 23.5:
 				self.input = 23.5
-			else if self.input < -23.5:
+			elif self.input < -23.5:
 				self.input = -23.5
 			
 			# publish input voltage to motor
-			vol = Float64()
+			vol = Float32()
 			vol.data = self.input
 			self.voltage_pub.publish(vol)
 

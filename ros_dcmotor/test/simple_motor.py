@@ -14,7 +14,7 @@ u = 24 #v
 while True:
 	
 	tnow = time.time()
-	Ts =(tnow - tpre)
+	Ts =0.01#(tnow - tpre)
 	wnow = (1-(a*Ts))*wpre + b*Ts*u
 
 
@@ -24,4 +24,4 @@ while True:
 	wpre = wnow
 	tpre = tnow
 
-	time.sleep(0.03)
+	time.sleep(0.01)
