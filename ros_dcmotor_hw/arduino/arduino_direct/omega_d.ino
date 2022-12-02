@@ -1,4 +1,3 @@
-// callback function for subcribe to right wheel
 void right_cmd_pwm_cb(const std_msgs::Float32& msg)
 {
   omega_d = msg.data;
